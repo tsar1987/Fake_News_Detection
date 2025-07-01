@@ -80,6 +80,20 @@ Key Predictive Patterns Identified:
 3. Informal Tone: Frequent use of words like just, said, like
 4. Main Limitation: The model is highly effective on this dataset but is likely overfit to a specific style of fake news, posing a risk to its ability to generalize to different types of misinformation.
 
+## Future Work
+
+1. spacy method
+https://github.com/tsar1987/Fake_News_Detection/blob/ae4a5fe8b6501f6fa143a9ab2102dc10cff2b896/Notebooks/spacy_vector.ipynb
+
+2. word2vec and doc2vec method
+https://github.com/tsar1987/Fake_News_Detection/blob/ae4a5fe8b6501f6fa143a9ab2102dc10cff2b896/Notebooks/gensim_word2vec%20and%20doc2vec.ipynb
+
+3. sentence_transformer
+https://github.com/tsar1987/Fake_News_Detection/blob/1c1eda40f404b71337d37f2668a9c892cfcd068b/Notebooks/sentence_transformer.ipynb
+
+4. BERT method
+https://github.com/tsar1987/Fake_News_Detection/blob/1c1eda40f404b71337d37f2668a9c892cfcd068b/Notebooks/FakeNewDetection_BERT_PyTorch.ipynb
+
 
  
 
