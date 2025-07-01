@@ -18,29 +18,32 @@ Collect 25 pieces of news from internet.
 the 13 real news comes from reuters (7 news), cnn (2 news) and npr(4 news),      
 the 12 real news comes from breitbart (5 news) and thegatewaypundit (7 news).   
 ## Exploratory Data Analysis
-![image](https://github.com/tsar1987/Capstone_Project_Three/assets/125304961/a92be025-2c6d-440b-8190-b1139a028ec8)
+
+![image](https://github.com/tsar1987/Fake_News_Detection/blob/94835aae49ae36d10e763f4cb7774452c13d4127/Figure/news%20proportion.png)
 
 Fake news 54.5%     Real news 45.5%    
 
-![image](https://github.com/tsar1987/Capstone_Project_Three/assets/125304961/ef31b57e-823a-401d-8415-1241da4ad0a8)
+![image](https://github.com/tsar1987/Fake_News_Detection/blob/94835aae49ae36d10e763f4cb7774452c13d4127/Figure/year.png)
 
 News distribution by year is biased. 2015 and 2018 only fake news.        
 
-![image](https://github.com/tsar1987/Capstone_Project_Three/assets/125304961/dae77a66-6505-4e32-84c4-d6866fd236c1)
+![image](https://github.com/tsar1987/Fake_News_Detection/blob/94835aae49ae36d10e763f4cb7774452c13d4127/Figure/month.png)
 
 Patterns of news distribution by months: more real news from Sept. to Dec.
 
-![image](https://github.com/tsar1987/Capstone_Project_Three/assets/125304961/14187745-3796-4a0a-87bd-c8b2b3f484f9)
+![image](https://github.com/tsar1987/Fake_News_Detection/blob/94835aae49ae36d10e763f4cb7774452c13d4127/Figure/day_of_week.png)
 
 Patterns of news distribution by day: more fake news at weekends
 
-![image](https://github.com/tsar1987/Capstone_Project_Three/assets/125304961/c640d5bd-820f-4ad8-bf7e-56fbfeb46930)
+![image](https://github.com/tsar1987/Fake_News_Detection/blob/94835aae49ae36d10e763f4cb7774452c13d4127/Figure/day_to_election.png)
 
 Distribution of news by day to election: more fake news before election
 
 ## Data Training and Modeling
-Hyperparameter Table
+Hyperparameter Table:
+
 ![image](https://github.com/user-attachments/assets/23131aa6-008f-41b7-b35b-6d248ca8c7da)
+
 Based on the comparative performance of the four initial models, the **XGBoost classifier** has been selected for further tuning and optimization. In this first round of experiments, which combined text and metadata features, the XGBoost model consistently outperformed Logistic Regression, Random Forest, and Gradient Boosting. It achieved the highest scores across all key evaluation metrics on the validation set, including a top validation accuracy of 0.987, a recall of 0.983, a precision of 0.989, and a leading F1-score of 0.986. This superior and well-balanced performance makes it the most robust and promising candidate for subsequent hyperparameter tuning. 
 
 Best Model Performance on Test Set       
