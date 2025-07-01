@@ -1,0 +1,18 @@
+Exp,Model_Name,n_Num,n_Cat,Cat_Encode,Test_P,Scale,Cross_Val,CV,Train_Accuracy,Val_Accuracy,Val_Recall,Val_Precision,Nlp_Encode,n_Vector,ngram_range,Del_HCoff,max_df,min_df
+1,Logistic Regression,9,2,pd.get_dimmies(),0.1,No,Yes,5,0.89,0.895,0.929,0.886,,,,,,
+2,RandomForest Classifier,9,2,pd.get_dimmies(),0.1,No,Yes,5,0.919,0.923,0.947,0.916,,,,,,
+3,GradientBoost Classifier,9,2,pd.get_dimmies(),0.1,No,Yes,5,0.919,0.921,0.956,0.907,,,,,,
+4,XGBoost Classifier,9,2,pd.get_dimmies(),0.1,No,Yes,5,0.919,0.922,0.947,0.914,,,,,,
+5,XGBoost,0,1,,0.1,No,Yes,5,0.997,0.997,0.998,0.997,CountVectorizer(),115418.0,"(1, 1)",,,
+6,XGBoost,0,1,,0.1,No,Yes,5,0.976,0.975,0.982,0.972,CountVectorizer(),109545.0,"(1, 1)",Yes,,
+7,XGBoost,0,1,,0.1,No,Yes,5,0.974,0.971,0.979,0.969,CountVectorizer(),109537.0,"(1, 1)",Yes,0.8,
+8,XGBoost,0,1,,0.1,No,Yes,5,0.962,0.959,0.972,0.955,CountVectorizer(),300.0,"(1, 1)",Yes,,0.1
+9,XGBoost,0,1,,0.1,No,Yes,5,0.958,0.956,0.967,0.953,CountVectorizer(),292.0,"(1, 1)",Yes,0.8,0.1
+10,XGBoost,0,1,,0.1,No,Yes,5,0.911,0.908,0.917,0.916,CountVectorizer(),91.0,"(2, 2)",Yes,0.8,0.1
+11,XGBoost,0,1,,0.1,No,Yes,5,0.965,0.961,0.97,0.959,CountVectorizer(),383.0,"(1, 2)",Yes,0.8,0.1
+12,XGBoost,0,1,,0.1,No,Yes,5,0.944,0.946,0.957,0.947,CountVectorizer(),143.0,"(1, 2)",Yes,0.8,0.2
+13,XGBoost,0,1,,0.1,No,Yes,5,0.964,0.961,0.97,0.96,TfidfVectorizer(),383.0,"(1, 2)",Yes,0.8,0.1
+14,XGBoost,0,1,,0.1,No,Yes,5,0.958,0.956,0.968,0.953,TfidfVectorizer(),292.0,"(1, 1)",Yes,0.8,0.1
+15,XGBoost,0,1,,0.1,No,Yes,5,0.961,0.958,0.968,0.957,TfidfVectorizer(),300.0,"(1, 1)",Yes,,0.1
+16,XGBoost,0,1,,0.1,No,Yes,5,0.973,0.972,0.98,0.97,TfidfVectorizer(),109537.0,"(1, 1)",Yes,0.8,
+17,XGBoost,0,1,,0.1,No,Yes,5,0.973,0.973,0.975,0.975,TfidfVectorizer(),109545.0,"(1, 1)",Yes,,

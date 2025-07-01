@@ -1,0 +1,14 @@
+Exp,Model_Name,Features,Scale,Vectorizer,Train_Accuracy,Val_Accuracy,Val_Recall,Val_Precision,Val_F1,Test_Accuracy,Test_Recall,Test_Precision,Test_F1,Vectorizer_Params
+1_Hybrid,Logistic Regression (Pipeline),Text+Meta,StandardScaler,CountVectorizer,0.999,0.981,0.976,0.982,0.979,,,,,
+2_Hybrid,Random Forest (Pipeline),Text+Meta,StandardScaler,CountVectorizer,1,0.972,0.957,0.98,0.968,,,,,
+3_Hybrid,Gradient Boost (Pipeline),Text+Meta,StandardScaler,CountVectorizer,0.976,0.971,0.957,0.978,0.967,,,,,
+4_Hybrid,XGboost (Pipeline),Text+Meta,StandardScaler,CountVectorizer,0.999,0.987,0.983,0.989,0.986,0.84,0.917,0.786,0.846,
+5_Hybrid_Tuned,XGboost (Pipeline),Text+Meta,StandardScaler,CountVectorizer,0.999,0.987,0.983,0.989,0.986,0.84,0.917,0.786,0.846,"max_features=2000, ngram_range=(1,3), max_df=0.8, min_df=5"
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+Exp,Model_Name,Features,Scale,Vectorizer,Test_Accuracy,Test_Recall,Test_Precision,Test_F1,Vectorizer_Params,,,,,
+4_Hybrid,XGboost (Pipeline),Text+Meta,StandardScaler,CountVectorizer,0.84,0.917,0.786,0.846,"max_features=None, ngram_range=(1,1), max_df=1, min_df=1",,,,,
+5_Hybrid_Tuned,XGboost (Pipeline),Text+Meta,StandardScaler,CountVectorizer,0.84,0.917,0.786,0.846,"max_features=2000, ngram_range=(1,3), max_df=0.8, min_df=5",,,,,

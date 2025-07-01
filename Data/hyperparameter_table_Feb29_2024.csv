@@ -1,0 +1,18 @@
+Exp,Model_Name,n_Num,n_Cat,Cat_Encode,Test_P,Scale,Cross_Val,CV,Train_Accuracy,Val_Accuracy,Val_Recall,Val_Precision,Test_Accuracy,Test_Recall,Test_Precision,Test_f1,Nlp_Encode,n_Vector,ngram_range,Del_HCoff,max_df,min_df
+1,Logistic Regression,9,2,pd.get_dimmies(),0.1,No,Yes,5,0.89,0.897,0.93,0.888,0.6,0.308,0.8,0.444,,,,,,
+2,RandomForest Classifier,9,2,pd.get_dimmies(),0.1,No,Yes,5,0.919,0.922,0.95,0.913,0.68,0.462,0.857,0.6,,,,,,
+3,GradientBoost Classifier,9,2,pd.get_dimmies(),0.1,No,Yes,5,0.919,0.921,0.956,0.907,0.68,0.462,0.857,0.6,,,,,,
+4,XGBoost Classifier,9,2,pd.get_dimmies(),0.1,No,Yes,5,0.918,0.924,0.947,0.918,0.76,0.615,0.889,0.727,,,,,,
+5,Logistic Regression,0,1,,0.1,No,Yes,5,0.995,0.993,0.996,0.992,0.88,0.769,1,0.87,CountVectorizer(),115418,"(1, 1)",,,
+6,Logistic Regression,0,1,,0.1,No,Yes,5,0.974,0.973,0.981,0.971,0.88,0.769,1,0.87,CountVectorizer(),109545,"(1, 1)",Yes,,
+7,Logistic Regression,0,1,,0.1,No,Yes,5,0.972,0.97,0.976,0.97,0.92,0.846,1,0.917,CountVectorizer(),109537,"(1, 1)",Yes,0.8,
+8,Logistic Regression,0,1,,0.1,No,Yes,5,0.952,0.953,0.966,0.95,0.88,0.923,0.857,0.889,CountVectorizer(),300,"(1, 1)",Yes,,0.1
+9,Logistic Regression,0,1,,0.1,No,Yes,5,0.947,0.944,0.962,0.938,0.92,1,0.867,0.929,CountVectorizer(),292,"(1, 1)",Yes,0.8,0.1
+10,Logistic Regression,0,1,,0.1,No,Yes,5,0.901,0.895,0.901,0.908,0.6,0.692,0.6,0.643,CountVectorizer(),91,"(2, 2)",Yes,0.8,0.1
+11,Logistic Regression,0,1,,0.1,No,Yes,5,0.96,0.958,0.967,0.957,0.84,0.846,0.846,0.846,CountVectorizer(),383,"(1, 2)",Yes,0.8,0.1
+12,Logistic Regression,0,1,,0.1,No,Yes,5,0.932,0.932,0.954,0.925,0.8,0.769,0.833,0.8,CountVectorizer(),143,"(1, 2)",Yes,0.8,0.2
+13,Logistic Regression,0,1,,0.1,No,Yes,5,0.96,0.958,0.968,0.956,0.84,0.846,0.846,0.846,TfidfVectorizer(),383,"(1, 2)",Yes,0.8,0.1
+14,Logistic Regression,0,1,,0.1,No,Yes,5,0.951,0.944,0.961,0.939,0.92,0.923,0.923,0.923,TfidfVectorizer(),292,"(1, 1)",Yes,0.8,0.1
+15,Logistic Regression,0,1,,0.1,No,Yes,5,0.956,0.952,0.964,0.95,0.88,0.846,0.917,0.88,TfidfVectorizer(),300,"(1, 1)",Yes,,0.1
+16,Logistic Regression,0,1,,0.1,No,Yes,5,0.972,0.971,0.979,0.968,0.92,0.846,1,0.917,TfidfVectorizer(),109537,"(1, 1)",Yes,0.8,
+17,Logistic Regression,0,1,,0.1,No,Yes,5,0.973,0.971,0.977,0.97,0.92,0.846,1,0.917,TfidfVectorizer(),109545,"(1, 1)",Yes,,
